@@ -82,12 +82,12 @@ A grid of "covered" cells is displayed, some of which contain bombs (mines),
 
 # Details
 
-    * The first cell opened is never a bomb.
+    * The first cell dug is never a bomb.
     * Digging a cell with no neighboring mines automatically uncovers obviously safe neighbor cells.
     * Side cells and corner cells have fewer neighbors since grid edges do not "wrap around".
-    * Incorrect bomb markings dont kill, but can lead to mistakes which do.
+    * Incorrect bomb markings dont detonate, but can lead to mistakes which do.
     * Win by Marking all bombs correctly or, by clearing (Digging) all non-bomb cells.
-    * An incorrectly Marked cell will have to corrected to win.
+    * An incorrectly Marked cell will have to be corrected to win.
 
 # Status Information
 
