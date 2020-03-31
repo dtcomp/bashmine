@@ -2,15 +2,13 @@
 
 bm.sh [ options ]
 
-** Options:
-\
+### Options:
 -s <<Width>x<Height>>      ( Size of grid in cells: 3x3..26x26 )\
 -p <<PromptLevel>> 0,1,2,3 ( Increasing verbosity )\
 -h show Help\
--r "Reveal" mode (for debug, etc.)\
-
-** Defaults
-
+-r "Reveal" mode (for debug, etc.)
+  
+### Defaults
 <Mode>        : Normal
 <Size>        : 9x9
 <PromptLevel> : 3
@@ -87,18 +85,18 @@ A grid of "covered" cells is displayed, some of which contain bombs (mines),
 
 # Details
 
-    The first cell opened is never a bomb.
-    Digging a cell with no neighboring mines automatically uncovers obviously safe neighbor cells.
-    Side cells and corner cells have fewer neighbors since grid edges do not "wrap around".
-    Incorrect bomb markings dont kill, but can lead to mistakes which do.
-    Win by Marking all bombs correctly or, by clearing (Digging) all non-bomb cells.
-    An incorrectly Marked cell will have to corrected to win.
+    * The first cell opened is never a bomb.
+    * Digging a cell with no neighboring mines automatically uncovers obviously safe neighbor cells.
+    * Side cells and corner cells have fewer neighbors since grid edges do not "wrap around".
+    * Incorrect bomb markings dont kill, but can lead to mistakes which do.
+    * Win by Marking all bombs correctly or, by clearing (Digging) all non-bomb cells.
+    * An incorrectly Marked cell will have to corrected to win.
 
 # Status Information
 
-    Upper left corner  : Number of turns taken
-    Below upper left   : Elapsed time (updated after turns)
-    Upper right corner : Number of covered cells left
-    Below upper right  : Number of "mined" cells 
+    * Upper left corner  : Number of turns taken
+    * Below upper left   : Elapsed time (updated after turns)
+    * Upper right corner : Number of covered cells left
+    * Below upper right  : Number of "mined" cells 
 
                                                                             
