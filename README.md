@@ -2,7 +2,7 @@
 
 bm.sh [ options ]
 
-### Options:
+### Options
 -s \<Width\>x\<Height\>      ( Size of grid in cells: 3x3..26x26 )\
 -p \<PromptLevel\> 0,1,2,3 ( Increasing verbosity )\
 -h show Help\
@@ -34,7 +34,6 @@ A grid of "covered" cells is displayed, some of which contain bombs (mines),
 
   Example: Top-Left Cell = A1
 
-
 ## Game Actions
 
   This game is played at your "console" command prompt by entering
@@ -64,7 +63,7 @@ A grid of "covered" cells is displayed, some of which contain bombs (mines),
 ### Cell Address Expressions
 
   For conveinience, multiple address expressions may be
-  used to apply an action to mulitiple cell ranges. Note:
+  used to apply actions to mulitiple cell ranges. Note:
   cell range expressions contain '-' between start and end.
 
   Example: A1-C3D C6-7M
@@ -80,8 +79,6 @@ A grid of "covered" cells is displayed, some of which contain bombs (mines),
     <Row><Col>-<Row>        ( Ex. A1-J  )
     <Row>-<Row><Col>        ( Ex. B-D6  )
     <Row><Col>              ( Ex. A1    )
-
-
 
 # Details
 
@@ -99,4 +96,4 @@ A grid of "covered" cells is displayed, some of which contain bombs (mines),
     * Upper right corner : Number of covered cells left
     * Below upper right  : Number of "mined" cells 
 
-                                                                            
+go ahead, blow my mine...                                                                            
