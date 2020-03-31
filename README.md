@@ -1,6 +1,6 @@
 ** Usage:
 
-bashmines [ options ]
+bm.sh [ options ]
 
 ** Options:
 
