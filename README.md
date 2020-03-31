@@ -1,11 +1,11 @@
-# Usage:
+## Usage
 
 bm.sh [ options ]
 
 ** Options:
 \
--s <Width>x<Height>      ( Size of grid in cells: 3x3..26x26 )\
--p <PromptLevel> 0,1,2,3 ( Increasing verbosity )\
+-s <<Width>x<Height>>      ( Size of grid in cells: 3x3..26x26 )\
+-p <<PromptLevel>> 0,1,2,3 ( Increasing verbosity )\
 -h show Help\
 -r "Reveal" mode (for debug, etc.)\
 
@@ -15,7 +15,7 @@ bm.sh [ options ]
 <Size>        : 9x9
 <PromptLevel> : 3
 
-## General:
+## General
 
 A grid of "covered" cells is displayed, some of which contain bombs (mines),
 "covered" means one cannot tell where bombs are positioned.
@@ -29,7 +29,7 @@ A grid of "covered" cells is displayed, some of which contain bombs (mines),
 * When an unmined "Clear" cell is "Dug", for each neighbor cell,
   a number is revealed, indicating count of mined cells.
 
-## Cell Addresses:
+## Cell Addresses
 
   Each grid cell has a unique address represented
   by a Row (letter) and Column (number).
@@ -37,7 +37,7 @@ A grid of "covered" cells is displayed, some of which contain bombs (mines),
   Example: Top-Left Cell = A1
 
 
-## Game Actions:
+## Game Actions
 
   This game is played at your "console" command prompt by entering
     a cell address immeditely followed by an optional action
@@ -48,7 +48,7 @@ A grid of "covered" cells is displayed, some of which contain bombs (mines),
 
   The actions you can perform are represented by letters 'D','M','U'.
   
-###  Action Specifier Meaning:
+###  Action Specifier Meaning
 
     D) Dig
     M) Mark
@@ -63,7 +63,7 @@ A grid of "covered" cells is displayed, some of which contain bombs (mines),
 * 'U'nmarking a Marked cell removes a previous mark,
     in case an error in marking is discovered.
 
-### Cell Address Expressions:
+### Cell Address Expressions
 
   For conveinience, multiple address expressions may be
   used to apply an action to mulitiple cell ranges. Note:
@@ -75,7 +75,7 @@ A grid of "covered" cells is displayed, some of which contain bombs (mines),
   Mark cells C6 and C7.
   ( Last letter specifies action for each range expression )
 
-###  Address expression forms:
+###  Address expression forms
   
     <Row><Col>-<Row><Col>   ( Ex. A2-C4 )
     <Row><Col>-<Col>        ( Ex. A2-5  )
@@ -85,7 +85,7 @@ A grid of "covered" cells is displayed, some of which contain bombs (mines),
 
 
 
-# Details:
+# Details
 
     The first cell opened is never a bomb.
     Digging a cell with no neighboring mines automatically uncovers obviously safe neighbor cells.
@@ -94,7 +94,7 @@ A grid of "covered" cells is displayed, some of which contain bombs (mines),
     Win by Marking all bombs correctly or, by clearing (Digging) all non-bomb cells.
     An incorrectly Marked cell will have to corrected to win.
 
-# Status Information:
+# Status Information
 
     Upper left corner  : Number of turns taken
     Below upper left   : Elapsed time (updated after turns)
