@@ -3,8 +3,8 @@
 bm.sh [ options ]
 
 ### Options:
--s <<Width>x<Height>>      ( Size of grid in cells: 3x3..26x26 )\
--p <<PromptLevel>> 0,1,2,3 ( Increasing verbosity )\
+-s \<Width\>x\<Height\>      ( Size of grid in cells: 3x3..26x26 )\
+-p \<PromptLevel\> 0,1,2,3 ( Increasing verbosity )\
 -h show Help\
 -r "Reveal" mode (for debug, etc.)
   
